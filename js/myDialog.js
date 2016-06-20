@@ -53,6 +53,10 @@ var myDialog = {
             contentHtml += '' + content + '';
             thisObj.confirmModal.find('.content').html(contentHtml);
 
+            // var contentHtml = '';
+            // contentHtml += '' + content + '';
+            // thisObj.confirmModal.find('.content').html(contentHtml);
+
             if(!btnText) {
                 btnText="确定";
             }
@@ -65,6 +69,19 @@ var myDialog = {
             		fn();
             	}          	
             });
+
+            // if(!btnText) {
+            //     btnText="确定";
+            // }
+            // thisObj.confirmModal.find('.confirm').html(btnText);
+            // thisObj.confirmModal.show();
+
+            // thisObj.confirmModal.find('.confirm').click(function(){
+            //     thisObj.confirmModal.hide();
+            //     if(fn) {
+            //         fn();
+            //     }           
+            // });
 
             thisObj.confirmModal.find('.cancel').click(function(){
             	thisObj.confirmModal.hide();          	
